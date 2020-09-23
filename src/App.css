@@ -1,38 +1,94 @@
+body {
+  background-color: #eee;
+}
 .App {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+div.App h2 {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h5 {
+  text-align: center;
+  margin-bottom: 4px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+div.income-expense {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  background-color: #fff;
+  width: 200px;
+  padding: 10px;
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+div.income div {
+  margin-top: 4px;
+}
+div.expense div {
+  margin-top: 4px;
+  color: red;
+}
+div.list {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  margin-top: 4px;
+  padding: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div.list.income {
+  border-right: 2px solid green;
+}
+div.list.spent {
+  border-right: 2px solid red;
+}
+
+div.list-container {
+  border-top: 1px solid gray;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+button.spent {
+  background-color: rgb(177, 57, 57);
+  box-shadow: 1px 1px 2px 2px #dc9393;
+}
+button.get {
+  background-color: green;
+  box-shadow: 1px 1px 2px 2px #9beb87;
+}
+button {
+  margin: 10px;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+input {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.remove {
+  border-radius: 100%;
+  margin: 4px 10px 4px 4px;
+  background: #eee;
+  width: 20px;
+  display: inline-block;
+  height: 20x;
+  height: 20px;
+  text-align: center;
+  line-height: 19px;
+  cursor: pointer;
+  border: 1px solid #eee;
+}
+.remove:hover {
+  color: red;
+  border: 1px solid gray;
 }
