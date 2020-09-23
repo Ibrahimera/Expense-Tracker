@@ -18,7 +18,7 @@ const List = ({ transaction }) => {
         </span>
         {transaction.text}
       </div>
-      <div>$ {amount}</div>
+      <div>${amount}</div>
     </div>
   );
 };
