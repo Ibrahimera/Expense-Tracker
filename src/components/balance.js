@@ -7,9 +7,8 @@ const Balance = () => {
   const total = amounts.reduce((acc, item) => (acc += item), 0);
   return (
     <>
-      <div>Your balance is:</div>
       <div>
-        <b>${total}</b>
+        <span>Your balance is:</span>&nbsp;&nbsp; <b>${total}</b>
       </div>
     </>
   );
